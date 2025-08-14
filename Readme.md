@@ -148,3 +148,9 @@ The best IDE for development is `Visual Studio Code`.  Update the IDE as follows
 Once the environment is set, run the `app.py` file as follows:
 
 > Right click on `app.py` and choose `Run Python File in Terminal`
+
+## Compiled Distribution
+
+A precompiled version for Windows is in the `dist` directory.  If you are using Windows, try this application.
+
+* Download a pre-compiled version <a href="dist/ImageProcessor_v1.exe" target="new">ImageProcessor_v1.exe</a>

@@ -11,7 +11,6 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
@@ -32,8 +31,8 @@ MANIFEST
 #  Usually these files are created by PyInstaller.
 #  You should commit your .spec file, but not the temporary files and directories.
 *.spec
-dist/
 build/
+dist/
 
 # Installer logs
 pip-log.txt
