@@ -53,10 +53,6 @@ venv.bak/
 *_ui.py
 ui_*.py
 
-# Compiled Resource files (from .qrc files using pyside6-rcc)
-*_rc.py
-rc_*.py
-
 # Qt Creator project files
 *.pro.user
 *.pro.user.*
