@@ -1,0 +1,157 @@
+/* - SECTION Main Menu Items */
+QMenu {
+    background-color: white;
+    border: 1px solid #dcdcdc;
+}
+
+QMenu::item {
+    padding: 4px 20px 4px 20px;
+}
+
+QMenu::item:selected {
+    background-color: #4a90e2;
+    /* Highlight color for hover */
+    color: white;
+}
+
+QWidget {
+    background-color: #2E3440;
+    color: #ECEFF4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 10pt;
+}
+
+QMainWindow {
+    background-color: #2E3440;
+}
+
+QGroupBox {
+    background-color: #3B4252;
+    border-radius: 8px;
+    margin-top: 1em;
+    padding: 15px;
+    border: 1px solid #87cefa;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 5px 10px;
+    background-color: #434C5E;
+    border-radius: 5px;
+    color: #E5E9F0;
+}
+
+/* --- QGroupBox Styling using an ID Selector for reliability --- */
+QGroupBox#dest_dir {
+    background-color: #3B4252;
+    border: 1px solid #87cefa;
+    border-radius: 5px;
+    margin-top: 1ex;
+    color: #f8f8f2;
+}
+
+QGroupBox#dest_dir::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 5px;
+}
+
+/* --- Styling for the DISABLED QGroupBox --- */
+QGroupBox#dest_dir:disabled {
+    border: 1px solid #555;
+    /* Gray border when disabled */
+    color: #666;
+    /* Gray title text when disabled */
+}
+
+QLineEdit,
+QTextEdit {
+    background-color: #434C5E;
+    border: 1px solid #4C566A;
+    border-radius: 5px;
+    padding: 8px;
+    color: #D8DEE9;
+}
+
+QLineEdit:focus,
+QTextEdit:focus {
+    border: 1px solid #88C0D0;
+}
+
+QPushButton {
+    background-color: #5E81AC;
+    color: #ECEFF4;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #81A1C1;
+}
+
+QPushButton:pressed {
+    background-color: #88C0D0;
+}
+
+QPushButton#startButton {
+    background-color: #A3BE8C;
+}
+
+QPushButton#startButton:hover {
+    background-color: #B4D5A4;
+}
+
+QProgressBar {
+    border: 1px solid #4C566A;
+    border-radius: 5px;
+    background-color: #434C5E;
+    text-align: center;
+    color: #ECEFF4;
+}
+
+QProgressBar::chunk {
+    background-color: #88C0D0;
+    border-radius: 4px;
+}
+
+QLabel {
+    color: #D8DEE9;
+    padding-left: 2px;
+}
+
+QCheckBox {
+    spacing: 10px;
+    background-color: none;
+}
+
+QCheckBox:disabled {
+    color: #808080;
+}
+
+QCheckBox::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QCheckBox::indicator {
+    background-color: #434C5E;
+    border: 1px solid #4C566A;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #88C0D0;
+    border: 1px solid #4C566A;
+    border-radius: 3px;
+}
+
+QDialog {
+    background-color: #2E3440;
+}
+
+QTextBrowser {
+    background-color: #2E3440;
+}
