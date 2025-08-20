@@ -1,0 +1,24 @@
+<!-- The RCC file is required.  When compiling the code to a native
+executible, the executible will not be able to find static files.  
+Therefore, we make them resources -->
+
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource prefix="/">
+    <!-- ==== IMAGE ==== -->
+    <file alias="app_icon.jpg">Static/Graphics/Icons/ipa_v4.jpeg</file>
+    <file alias="window_icon.png">Static/Graphics/Icons/window_icon_256x256.png</file>
+    <file alias="splash_screen.png">Static/Graphics/Icons/ipa_v4_splash.png</file>
+    <!-- ==== STYLESHEET ==== -->
+    <file alias="app_stylesheet.qss">Static/Style/app_stylesheet.qss</file>
+    <!-- ==== HTML ==== -->
+    <file alias="about.html">Static/Content/about.html</file>
+    <file alias="usage.html">Static/Content/usage.html</file>
+    <!-- SNIPPETS -->
+    <file alias="snippet_changes.html">Static/Content/Snippet/changes.html</file>
+    <file alias="snippet_description.html">Static/Content/Snippet/description.html</file>
+    <file alias="snippet_name.html">Static/Content/Snippet/name.html</file>
+    <file alias="snippet_style.html">Static/Content/Snippet/style.html</file>
+    <file alias="snippet_version.html">Static/Content/Snippet/version.html</file>
+  </qresource>
+</RCC>

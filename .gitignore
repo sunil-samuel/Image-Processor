@@ -1,0 +1,116 @@
+# --- Python ---
+# Byte-compiled / optimized / C extensions
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are created by PyInstaller.
+#  You should commit your .spec file, but not the temporary files and directories.
+*.spec
+build/
+dist/
+
+# Nuitka
+app.build/
+app.dist/
+UPX
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Virtual Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- PySide6 / Qt ---
+# Compiled UI files (from .ui files using pyside6-uic)
+# It's better to generate these during the build process
+*_ui.py
+ui_*.py
+
+# Qt Creator project files
+*.pro.user
+*.pro.user.*
+*.qmlproject.user
+*.qmlproject.user.*
+
+# --- IDEs & Editors ---
+# Visual Studio Code
+.vscode/**
+**/.vscode
+
+# PyCharm
+.idea/**
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# --- Testing ---
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+
+# --- OS Generated Files ---
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Miscellaneous ---
+# Secrets and environment variables
+*.env
+.env.*
+secrets.ini
+
+# Log files
+*.log
+logs/
+
+# Personal Configuration file
+config.ini
+resources/**
+resources.bak/**
+
+**/*.exe

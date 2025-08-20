@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    ${style}
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td style="vertical-align:middle;"><img width="200" src=":/app_icon.jpg"></td>
+            <td style="vertical-align:middle;padding-left:20px;text-align:center;font-weight:bold;">
+                ${name}
+            </td>
+        </tr>
+    </table>
+
+    <h1>Image Processor Help</h1>
+    ${description}
+
+    <h2>Huggingface Token</h2>
+    <p>A Huggingface token is required to run the AI models that are responsible for generating the descriptive text for
+        images.</p>
+    <p>Visit the following URL to generate the token: <a
+            href="https://huggingface.co/settings/tokens">https://huggingface.co/settings/tokens</a></p>
+    <p>Once the token is generated, use <code>File->Set Huggingface Token</code> and place this newly created token into
+        the text box. This will persist the token into your personal folder so that the next time you run this
+        application, the token is already set.</p>
+
+    <h2>Processing Options</h2>
+    <p>The 'Processing Options' are configuration paramters as follows:</p>
+    <ul>
+        <li><b>Add Created Date</b>: Inspect the image for the 'date taken' information using the EXIF meta data. If
+            this date exist, then the file is prefixed with this date. If the 'date taken' does not exist, then the
+            OS file creation date is used. </li>
+        <li><b>Open Sub-Folders</b>: Traverse the 'Source Directory' and any sub folders within this directory.
+            Otherwise, just load images from the 'Source Directory'.
+        </li>
+        <li><b>Move Files</b> or <b>Copy Files</b>: NOTE: Only either 'Move Files' or 'Copy Files' can be selected. If
+            selected, then the images are moved or copied to the destination directory selected within the 'Destination
+            Directory Selection' area. Year directories with the format YYYY will be created to store the files within
+            the
+            corresponding years.</li>
+        <li><b>Create Month Folder</b>: NOTE: Only enabled is either 'Move Files' or 'Copy Files' is selected. Create
+            month will create another sub-folder within the year folder for the month in the format MM-MonthName, e.g.
+            01-January</li>
+        <li><b>AI Description</b>: Use huggingface models to dynamically describe the the images. These descriptions are
+            then stored within the EXIF metadata within the UserComment section.<br><br>
+            The level of detail of the description that is created can be selected.<br>
+            <b>Brief</b>: The caption is brief and short<br>
+            <b>Standard</b>: The caption is more detailed<br>
+            <b>Full</b>: The caption has lots of detail of the image
+        </li>
+    </ul>
+    <hr>
+
+    <h2>Source Directory Selection</h2>
+    <p>Select the directory path to where all of the images are stored. The application will traverse this directory and
+        analyze each image.</p>
+
+    <h2>Destination Directory Selection</h2>
+    <p>If you selected 'Move Files' or 'Copy Files', then provide the directory where these images will be moved or
+        copied. The files will be moved to a directory that corresponds with the 'date taken' year, with the format
+        YYYY. If 'Create Month Folder' is selected, then there will be another sub-folder with the month.</p>
+
+    <h3>Credits</h3>
+    <p>Sunil Samuel - sgs@sunilsamuel.com</p>
+
+</body>
+
+
+</html>
